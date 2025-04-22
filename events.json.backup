@@ -1,7 +1,6 @@
 {
   "cultural": {
     "movies": [
-      { "name": "Jaws", "year": 1975 },
       { "name": "Star Wars: A New Hope", "year": 1977 },
       { "name": "E.T. the Extra-Terrestrial", "year": 1982 },
       { "name": "Back to the Future", "year": 1985 },
@@ -20,13 +19,9 @@
     ],
     "music": [
       { "name": "The Beatles' first album", "year": 1963 },
-      { "name": "Woodstock festival", "year": 1969 },
       { "name": "Elvis' last performance", "year": 1977 },
-      { "name": "Sugarhill Gang's 'Rapper's Delight'", "year": 1979 },
-      { "name": "MTV launches", "year": 1981 },
       { "name": "Michael Jackson's 'Thriller'", "year": 1982 },
       { "name": "Madonna's 'Like a Virgin'", "year": 1984 },
-      { "name": "Live Aid concert", "year": 1985 },
       { "name": "Nirvana's 'Nevermind'", "year": 1991 },
       { "name": "Spice Girls' debut single", "year": 1996 },
       { "name": "Britney Spears' '...Baby One More Time'", "year": 1999 },
@@ -41,15 +36,12 @@
       { "name": "Saturday Night Live premiere", "year": 1975 },
       { "name": "The Simpsons premiere", "year": 1989 },
       { "name": "Friends premiere", "year": 1994 },
-      { "name": "The Sopranos premiere", "year": 1999 },
-      { "name": "Survivor premiere", "year": 2000 },
       { "name": "Breaking Bad premiere", "year": 2008 },
       { "name": "Game of Thrones premiere", "year": 2011 },
       { "name": "Stranger Things premiere", "year": 2016 }
     ],
     "games": [
       { "name": "Pong", "year": 1972 },
-      { "name": "Atari 2600 release", "year": 1977 },
       { "name": "Space Invaders", "year": 1978 },
       { "name": "Pac-Man", "year": 1980 },
       { "name": "Super Mario Bros.", "year": 1985 },
@@ -66,7 +58,6 @@
     "fashion": [
       { "name": "Miniskirts become popular", "year": 1965 },
       { "name": "Punk fashion emerges", "year": 1975 },
-      { "name": "Disco fashion craze", "year": 1977 },
       { "name": "Madonna's 'Material Girl' look", "year": 1984 },
       { "name": "Grunge fashion peak", "year": 1992 },
       { "name": "Low-rise jeans trend", "year": 2000 },
@@ -78,16 +69,12 @@
       { "name": "End of World War II", "year": 1945 },
       { "name": "Cuban Missile Crisis", "year": 1962 },
       { "name": "JFK Assassination", "year": 1963 },
-      { "name": "Stonewall riots", "year": 1969 },
       { "name": "Nixon resignation", "year": 1974 },
-      { "name": "Iranian Revolution", "year": 1979 },
       { "name": "Berlin Wall fall", "year": 1989 },
       { "name": "Nelson Mandela's release", "year": 1990 },
-      { "name": "Soviet Union collapse", "year": 1991 },
       { "name": "9/11 Attacks", "year": 2001 },
       { "name": "Barack Obama election", "year": 2008 },
       { "name": "Brexit referendum", "year": 2016 },
-      { "name": "Donald Trump election", "year": 2016 },
       { "name": "COVID-19 pandemic begins", "year": 2020 }
     ],
     "technology": [
@@ -100,16 +87,14 @@
       { "name": "Windows 95 release", "year": 1995 },
       { "name": "Google founded", "year": 1998 },
       { "name": "Facebook launch", "year": 2004 },
-      { "name": "YouTube launch", "year": 2005 },
       { "name": "First iPhone release", "year": 2007 },
-      { "name": "Instagram launch", "year": 2010 }
+      { "name": "Instagram launch", "year": 2010 },
+      { "name": "ChatGPT release", "year": 2022 }
     ],
     "sports": [
-      { "name": "Muhammad Ali's first title", "year": 1964 },
       { "name": "First Super Bowl", "year": 1967 },
-      { "name": "Billie Jean King's 'Battle of the Sexes' win", "year": 1973 },
+      { "name": "Muhammad Ali's first title", "year": 1964 },
       { "name": "Miracle on Ice", "year": 1980 },
-      { "name": "Maradona's 'Hand of God' goal", "year": 1986 },
       { "name": "Michael Jordan's first title", "year": 1991 },
       { "name": "Tiger Woods' first Masters win", "year": 1997 },
       { "name": "Usain Bolt's world record", "year": 2009 },
@@ -118,15 +103,11 @@
     "world_events": [
       { "name": "United Nations founded", "year": 1945 },
       { "name": "First human in space", "year": 1961 },
-      { "name": "Fall of Saigon", "year": 1975 },
       { "name": "Chernobyl disaster", "year": 1986 },
-      { "name": "Tiananmen Square protests", "year": 1989 },
-      { "name": "Princess Diana's death", "year": 1997 },
       { "name": "Indian Ocean tsunami", "year": 2004 },
       { "name": "Global financial crisis", "year": 2008 },
       { "name": "Arab Spring begins", "year": 2010 },
-      { "name": "Paris Climate Agreement", "year": 2015 },
-      { "name": "#MeToo movement", "year": 2017 }
+      { "name": "Paris Climate Agreement", "year": 2015 }
     ]
   }
 }
