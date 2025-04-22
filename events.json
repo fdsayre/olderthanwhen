@@ -1,0 +1,113 @@
+{
+  "cultural": {
+    "movies": [
+      { "name": "Star Wars: A New Hope", "year": 1977 },
+      { "name": "E.T. the Extra-Terrestrial", "year": 1982 },
+      { "name": "Back to the Future", "year": 1985 },
+      { "name": "Jurassic Park", "year": 1993 },
+      { "name": "The Lion King", "year": 1994 },
+      { "name": "Toy Story", "year": 1995 },
+      { "name": "Titanic", "year": 1997 },
+      { "name": "The Matrix", "year": 1999 },
+      { "name": "The Lord of the Rings: Fellowship", "year": 2001 },
+      { "name": "Finding Nemo", "year": 2003 },
+      { "name": "The Dark Knight", "year": 2008 },
+      { "name": "Avatar", "year": 2009 },
+      { "name": "Frozen", "year": 2013 },
+      { "name": "Star Wars: The Force Awakens", "year": 2015 },
+      { "name": "Avengers: Endgame", "year": 2019 }
+    ],
+    "music": [
+      { "name": "The Beatles' first album", "year": 1963 },
+      { "name": "Elvis' last performance", "year": 1977 },
+      { "name": "Michael Jackson's 'Thriller'", "year": 1982 },
+      { "name": "Madonna's 'Like a Virgin'", "year": 1984 },
+      { "name": "Nirvana's 'Nevermind'", "year": 1991 },
+      { "name": "Spice Girls' debut single", "year": 1996 },
+      { "name": "Britney Spears' '...Baby One More Time'", "year": 1999 },
+      { "name": "iPod release", "year": 2001 },
+      { "name": "Lady Gaga's 'Poker Face'", "year": 2008 },
+      { "name": "Taylor Swift's '1989'", "year": 2014 },
+      { "name": "BTS' international breakthrough", "year": 2018 }
+    ],
+    "tv_shows": [
+      { "name": "I Love Lucy premiere", "year": 1951 },
+      { "name": "Star Trek original series", "year": 1966 },
+      { "name": "Saturday Night Live premiere", "year": 1975 },
+      { "name": "The Simpsons premiere", "year": 1989 },
+      { "name": "Friends premiere", "year": 1994 },
+      { "name": "Breaking Bad premiere", "year": 2008 },
+      { "name": "Game of Thrones premiere", "year": 2011 },
+      { "name": "Stranger Things premiere", "year": 2016 }
+    ],
+    "games": [
+      { "name": "Pong", "year": 1972 },
+      { "name": "Space Invaders", "year": 1978 },
+      { "name": "Pac-Man", "year": 1980 },
+      { "name": "Super Mario Bros.", "year": 1985 },
+      { "name": "Sonic the Hedgehog", "year": 1991 },
+      { "name": "PlayStation release", "year": 1994 },
+      { "name": "Pokemon Red & Blue", "year": 1996 },
+      { "name": "Half-Life", "year": 1998 },
+      { "name": "Grand Theft Auto III", "year": 2001 },
+      { "name": "World of Warcraft", "year": 2004 },
+      { "name": "Wii release", "year": 2006 },
+      { "name": "Minecraft", "year": 2011 },
+      { "name": "Fortnite", "year": 2017 }
+    ],
+    "fashion": [
+      { "name": "Miniskirts become popular", "year": 1965 },
+      { "name": "Punk fashion emerges", "year": 1975 },
+      { "name": "Madonna's 'Material Girl' look", "year": 1984 },
+      { "name": "Grunge fashion peak", "year": 1992 },
+      { "name": "Low-rise jeans trend", "year": 2000 },
+      { "name": "Athleisure becomes mainstream", "year": 2014 }
+    ]
+  },
+  "historical": {
+    "politics": [
+      { "name": "End of World War II", "year": 1945 },
+      { "name": "Cuban Missile Crisis", "year": 1962 },
+      { "name": "JFK Assassination", "year": 1963 },
+      { "name": "Nixon resignation", "year": 1974 },
+      { "name": "Berlin Wall fall", "year": 1989 },
+      { "name": "Nelson Mandela's release", "year": 1990 },
+      { "name": "9/11 Attacks", "year": 2001 },
+      { "name": "Barack Obama election", "year": 2008 },
+      { "name": "Brexit referendum", "year": 2016 },
+      { "name": "COVID-19 pandemic begins", "year": 2020 }
+    ],
+    "technology": [
+      { "name": "First electronic computer (ENIAC)", "year": 1945 },
+      { "name": "Moon landing", "year": 1969 },
+      { "name": "First personal computer", "year": 1975 },
+      { "name": "Sony Walkman release", "year": 1979 },
+      { "name": "First commercial cell phone", "year": 1983 },
+      { "name": "World Wide Web invented", "year": 1989 },
+      { "name": "Windows 95 release", "year": 1995 },
+      { "name": "Google founded", "year": 1998 },
+      { "name": "Facebook launch", "year": 2004 },
+      { "name": "First iPhone release", "year": 2007 },
+      { "name": "Instagram launch", "year": 2010 },
+      { "name": "ChatGPT release", "year": 2022 }
+    ],
+    "sports": [
+      { "name": "First Super Bowl", "year": 1967 },
+      { "name": "Muhammad Ali's first title", "year": 1964 },
+      { "name": "Miracle on Ice", "year": 1980 },
+      { "name": "Michael Jordan's first title", "year": 1991 },
+      { "name": "Tiger Woods' first Masters win", "year": 1997 },
+      { "name": "Usain Bolt's world record", "year": 2009 },
+      { "name": "Leicester City's Premier League win", "year": 2016 }
+    ],
+    "world_events": [
+      { "name": "United Nations founded", "year": 1945 },
+      { "name": "First human in space", "year": 1961 },
+      { "name": "Chernobyl disaster", "year": 1986 },
+      { "name": "Indian Ocean tsunami", "year": 2004 },
+      { "name": "Global financial crisis", "year": 2008 },
+      { "name": "Arab Spring begins", "year": 2010 },
+      { "name": "Paris Climate Agreement", "year": 2015 }
+    ]
+  }
+}

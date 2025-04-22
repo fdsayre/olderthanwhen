@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Time Perspective Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Older Than When</h1>
+    <p>This visualization compares how long ago events are in the past now compared to events when you were younger. I'm sorry.</p>
+    
+    <div class="input-controls">
+      <div class="input-group">
+        <label for="birthYear">Birth Year:</label>
+        <input type="number" id="birthYear" value="1981" min="1900" max="2023">
+      </div>
+      
+      <div class="input-group">
+        <label for="indexAge">Index Age:</label>
+        <input type="number" id="indexAge" value="10" min="1" max="100">
+      </div>
+      
+      <button id="updateVisualization">Update Visualization</button>
+    </div>
+    
+    <div class="category-controls">
+      <div class="category-group">
+        <h3>Cultural Events</h3>
+        <div class="category-toggles">
+          <label><input type="checkbox" class="category-checkbox" data-category="cultural" data-subcategory="movies" checked> Movies</label>
+          <label><input type="checkbox" class="category-checkbox" data-category="cultural" data-subcategory="music" checked> Music</label>
+          <label><input type="checkbox" class="category-checkbox" data-category="cultural" data-subcategory="tv_shows" checked> TV Shows</label>
+          <label><input type="checkbox" class="category-checkbox" data-category="cultural" data-subcategory="games" checked> Games</label>
+          <label><input type="checkbox" class="category-checkbox" data-category="cultural" data-subcategory="fashion" checked> Fashion</label>
+        </div>
+      </div>
+      
+      <div class="category-group">
+        <h3>Historical Events</h3>
+        <div class="category-toggles">
+          <label><input type="checkbox" class="category-checkbox" data-category="historical" data-subcategory="politics" checked> Politics</label>
+          <label><input type="checkbox" class="category-checkbox" data-category="historical" data-subcategory="technology" checked> Technology</label>
+          <label><input type="checkbox" class="category-checkbox" data-category="historical" data-subcategory="sports" checked> Sports</label>
+          <label><input type="checkbox" class="category-checkbox" data-category="historical" data-subcategory="world_events" checked> World Events</label>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <div class="content-wrapper">
+    <main class="timeline-wrapper">
+      <section class="timeline past-timeline">
+        <div class="timeline-header" id="pastHeader"></div>
+        <div class="timeline-axis"></div>
+        <div class="events-container" id="pastEvents"></div>
+      </section>
+      
+      <section class="timeline present-timeline">
+        <div class="timeline-header" id="presentHeader"></div>
+        <div class="timeline-axis"></div>
+        <div class="events-container" id="presentEvents"></div>
+      </section>
+    </main>
+  </div>
+  
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Older Than When</p>
+      <p>Created by Franklin Sayre - <a href="https://follyrancher.com" target="_blank">follyrancher.com</a></p>
+    </div>
+  </footer>
+  
+  <script src="vertical-timeline.js"></script>
+</body>
+</html>

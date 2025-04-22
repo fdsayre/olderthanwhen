@@ -1,0 +1,526 @@
+/* Reset and base styles */
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+html { 
+  height: 100%; 
+}
+
+body { 
+  min-height: 100vh;
+  font-family: sans-serif; 
+  background: #f5f7fa; 
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* Header */
+.site-header { 
+  text-align: center; 
+  padding: 1.5rem; 
+  background: white; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.site-header h1 { 
+  font-size: 1.8rem; 
+  margin-bottom: 0.5rem; 
+}
+
+.site-header p { 
+  font-size: 1rem; 
+  color: #666; 
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+}
+
+/* Input controls */
+.input-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0 0.5rem;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.input-group label {
+  font-weight: bold;
+  color: #555;
+}
+
+.input-group input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 80px;
+  font-size: 1rem;
+}
+
+button#updateVisualization {
+  padding: 0.5rem 1rem;
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+button#updateVisualization:hover {
+  background-color: #3a5985;
+}
+
+/* Category controls */
+.category-controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 1.5rem auto;
+  max-width: 900px;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.category-group {
+  min-width: 200px;
+}
+
+.category-group h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+  text-align: left;
+}
+
+.category-toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.category-toggles label {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.category-toggles input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* Main content container */
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px; /* Fixed space for footer */
+}
+
+/* Main layout */
+.timeline-wrapper { 
+  display: flex; 
+  margin: 1rem auto;
+  width: 95%;
+  max-width: 1800px;
+  padding: 0 1rem;
+  flex: 1;
+}
+
+/* Timeline containers */
+.timeline { 
+  flex: 1; 
+  position: relative; 
+  padding: 1rem; 
+  background: white; 
+  margin: 0 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure equal width for both timelines */
+.past-timeline, .present-timeline {
+  width: 50%;
+}
+
+/* Headers */
+.timeline-header { 
+  text-align: center; 
+  font-weight: bold; 
+  background: #f0f5fa; 
+  padding: 0.75rem; 
+  border-radius: 4px; 
+  margin-bottom: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Timeline axis */
+.timeline-axis { 
+  position: absolute; 
+  left: 50%; 
+  top: 3rem; 
+  bottom: 0; 
+  width: 2px; 
+  background: #ccc; 
+  transform: translateX(-50%); 
+}
+
+/* Year scale markers */
+.year-marker {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: rgba(0,0,0,0.05);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Year labels container */
+.year-labels-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.past-timeline .year-labels-container {
+  left: 0;
+}
+
+.present-timeline .year-labels-container {
+  right: 0;
+}
+
+.year-label {
+  position: absolute;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 3px 6px;
+  background-color: rgba(245, 245, 245, 0.9);
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  color: #666;
+  white-space: nowrap;
+  pointer-events: none;
+  text-align: center;
+}
+
+.past-timeline .year-label {
+  left: 5px;
+  transform: translateY(-50%);
+}
+
+.present-timeline .year-label {
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+.year-marker.highlighted {
+  height: 2px;
+  background-color: rgba(0,0,0,0.15);
+}
+
+.year-label.highlighted {
+  background-color: rgba(234, 240, 247, 0.95);
+  font-weight: bold;
+  color: #555;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Events container */
+.events-container { 
+  position: relative; 
+  width: 100%; 
+  flex: 1;
+  overflow-y: visible;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 80px;  /* Space for year labels */
+  padding-right: 80px; /* Space for year labels */
+}
+
+/* Event styling */
+.event { 
+  position: absolute; 
+  background: white; 
+  padding: 0.5rem 0.75rem; 
+  border-radius: 4px; 
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
+  z-index: 4;
+  max-width: 85%;
+  transition: all 0.2s ease-out;
+  display: flex;
+  align-items: center;
+}
+
+.event:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  z-index: 10;
+}
+
+/* Year group of events - for stacking */
+.year-events-group {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.year-events-group:hover .event {
+  z-index: 6;
+}
+
+/* Position events on each side */
+.past-timeline .event {
+  right: 15px;
+  transform: translateY(-50%);
+  flex-direction: row;
+}
+
+.present-timeline .event {
+  left: 15px;
+  transform: translateY(-50%);
+  flex-direction: row;
+}
+
+/* Category color coding */
+.event-category-marker {
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.past-timeline .event-category-marker {
+  left: 0;
+}
+
+.present-timeline .event-category-marker {
+  left: 0;
+}
+
+/* Category colors */
+.category-cultural-movies { background-color: #ff6b6b; }
+.category-cultural-music { background-color: #5a9e6f; }
+.category-cultural-tv_shows { background-color: #4a6fa5; }
+.category-cultural-games { background-color: #ffa94d; }
+.category-cultural-fashion { background-color: #cc5de8; }
+.category-historical-politics { background-color: #748ffc; }
+.category-historical-technology { background-color: #38d9a9; }
+.category-historical-sports { background-color: #f783ac; }
+.category-historical-world_events { background-color: #9775fa; }
+
+/* Event dots */
+.event-dot { 
+  width: 12px; 
+  height: 12px; 
+  border-radius: 50%; 
+  position: relative;
+  z-index: 2;
+}
+
+.past-timeline .event-dot {
+  margin-left: 8px;
+  order: 2;
+}
+
+.present-timeline .event-dot {
+  margin-right: 8px;
+  order: 1;
+}
+
+/* Event labels */
+.event-label { 
+  font-size: 0.9rem;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.past-timeline .event-label {
+  order: 1;
+  text-align: right;
+}
+
+.present-timeline .event-label {
+  order: 2;
+  text-align: left;
+}
+
+.event-label strong {
+  display: block;
+  margin-bottom: 2px;
+}
+
+/* Year styling - moved inside the event container */
+.event-year {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: bold;
+  margin: 0 5px;
+  white-space: nowrap;
+}
+
+.past-timeline .event-year {
+  order: 1;
+}
+
+.present-timeline .event-year {
+  order: 2;
+}
+
+/* Connecting lines */
+.past-timeline .event::after {
+  content: '';
+  position: absolute;
+  right: -16px;
+  top: 50%;
+  width: 16px;
+  height: 2px;
+  background: #ddd;
+  transform: translateY(-50%);
+}
+
+.present-timeline .event::before {
+  content: '';
+  position: absolute;
+  left: -16px;
+  top: 50%;
+  width: 16px;
+  height: 2px;
+  background: #ddd;
+  transform: translateY(-50%);
+}
+
+/* Color differences */
+.past-timeline .event-dot { 
+  background: #5a9e6f; 
+}
+
+.present-timeline .event-dot { 
+  background: #ff6b6b; 
+}
+
+/* Footer */
+.site-footer {
+  background: white;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #eee;
+  box-shadow: 0 -1px 3px rgba(0,0,0,0.05);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 80px;
+  z-index: 100;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.site-footer p {
+  margin: 0.3rem 0;
+  color: #666;
+}
+
+.site-footer a {
+  color: #4a6fa5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .timeline-wrapper {
+    flex-direction: column;
+    padding-bottom: 1rem;
+    width: 95%;
+  }
+  
+  .timeline {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  
+  .past-timeline, .present-timeline {
+    width: 100%;
+  }
+  
+  .input-controls {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .category-controls {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .event {
+    max-width: 80%;
+  }
+  
+  .content-wrapper {
+    margin-bottom: 100px;
+  }
+  
+  .events-container {
+    padding-left: 70px;
+    padding-right: 20px;
+  }
+  
+  .past-timeline .year-labels-container {
+    left: 0;
+    width: 65px;
+  }
+  
+  .present-timeline .year-labels-container {
+    left: 0;
+    width: 65px;
+    right: auto;
+  }
+  
+  .past-timeline .year-label,
+  .present-timeline .year-label {
+    left: 5px;
+    right: auto;
+  }
+}
